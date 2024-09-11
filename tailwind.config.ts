@@ -7,10 +7,19 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "var(--color-primary)",
+        bg: "var(--color-bg)",
+        gray: "rgb(64, 64, 63)",
+        customWhite: "#f4f4f4",
+      },
+      translate: {
+        "50%": "50%",
       },
     },
   },
